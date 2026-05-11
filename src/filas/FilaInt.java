@@ -27,5 +27,15 @@ public class FilaInt {
         fim = novo;
     }
 
-    public void dequeue(){}
+    public int dequeue(){
+        int valor = ini.dados;
+        ini = ini.prox;
+        if (ini == null){
+            fim = null;
+        }
+        return valor;
+    }
+    public int first (){
+        return ini.dados;
+    }
 }
